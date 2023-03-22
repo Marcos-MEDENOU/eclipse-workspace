@@ -1,0 +1,6 @@
+package bj.highfive.usermanagment.bean;
+
+public class User {
+	private int id;
+	private String name,email,country;
+}

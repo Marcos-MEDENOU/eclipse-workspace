@@ -1,0 +1,5 @@
+package bj.highfive.usermanagment.dao;
+
+public class Userdao {
+
+}

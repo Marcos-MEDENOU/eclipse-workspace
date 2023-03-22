@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app id="WebApp_9" version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+	<display-name>Servlet 3.0 application</display-name>
+	<servlet>
+		<servlet-name>AddServlet</servlet-name>
+		<servlet-class>bj.highfive.usermanagment.web.AddServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddServlet</servlet-name>
+		<url-pattern>/ajout</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SignInServlet</servlet-name>
+		<servlet-class>com.servlets.SignInServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SignInServlet</servlet-name>
+		<url-pattern>/sign_in</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SignUpServlet</servlet-name>
+		<servlet-class>com.servlets.SignUpServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SignUpServlet</servlet-name>
+		<url-pattern>/sign_up</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AboutServlets</servlet-name>
+		<servlet-class>com.servlets.AboutServlets</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AboutServlets</servlet-name>
+		<url-pattern>/about</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ContactServlet</servlet-name>
+		<servlet-class>com.servlets.ContactServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ContactServlet</servlet-name>
+		<url-pattern>/contact</url-pattern>
+	</servlet-mapping>
+	
+	<jsp-config>
+		<jsp-property-group>
+			<url-pattern>*.jsp</url-pattern>
+			<include-prelude>/WEB-INF/taglibs.jsp </include-prelude>
+		</jsp-property-group>
+	</jsp-config>
+</web-app>

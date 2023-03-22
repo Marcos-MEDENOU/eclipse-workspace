@@ -1,0 +1,17 @@
+package bj.highfive.usermanagment.dao;
+
+import java.sql.Connection;
+
+public class UserDao {
+
+	/****
+	 * CREAD ==> crée une ressources (createUser)
+	 * READ ==>Lire une ressource (getUserById),(getAllUser)
+	 * UPDATE==>maj une ressource
+	 * DELETE==>supprimer une ressource
+	 */
+	
+	public Connection getConnection() {
+		Connection con = new Connection();
+	}
+}

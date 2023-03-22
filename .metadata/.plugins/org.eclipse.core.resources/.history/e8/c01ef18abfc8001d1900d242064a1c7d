@@ -1,0 +1,33 @@
+package bj.highfive.usermanagment.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class UserDao {
+
+	/****
+	 * CREAD ==> crée une ressources (createUser)
+	 * READ ==>Lire une ressource (getUserById),(getAllUser)
+	 * UPDATE==>maj une ressource
+	 * DELETE==>supprimer une ressource
+	 */
+	
+	public Connection getConnection() {
+		Connection con = null;
+		
+		//spécifier le driver 
+		Class.forName("com.mysql.jdbc.Driver");//database de type mysql
+		
+		//getConnexion est la methode qui se connecte a la bd grace a la DriverManager
+		/***
+		 * getConnection(dsn,username,password);
+		 * dsn=data source name
+		 * exp php: $conn= new PDO("mysql:host=localhost; dbname=user_app;port=3306;charset=UTF-8");
+		 * $conn= new PDO($dsn, "root","");
+		 *
+		 */
+		con = DriverManager.getConnection("jdbc:mysql://localhost::3306/user_app", "root", "");
+		
+		return con;
+	}
+}
